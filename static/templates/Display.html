@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="3">
+<title>Display</title>
+<link rel="stylesheet" type = "text/css" href="{{url_for('static', filename='css/display.css')}}">
+	
+</head>
+
+<body>
+
+	<!-- LOGO and Title -->
+		<div class="title">  
+			<table style="width:100%;">
+				<tr>
+					<td style="width:33%">
+						<img src="{{url_for('static', filename='pics/display/img_bos.jpg')}}" width="260" height="100" alt="Bank Logo"/>
+					</td>
+					<td style="width:33%; text-align:center">
+						<span style="font-size:40px; font-weight:bold;vertical-align:middle"> BOS {{jinja_branch_name}} Branch</span>
+					</td>
+					<td style="width:33%;">
+					</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+	<!--
+		<div class="plate">  		
+		<h2 align="center"> BOS Branch</h2>
+		</div>
+-->
+	<!-- Form -->
+		<form method = "POST">
+			
+			<div class="plate">  		
+				<h1 align="center" style="vertical-align:middle;">{{jinja_biz_type}}</h1>
+			</div>
+			
+			<br>
+			
+			<table align = "center">
+				<tr>
+					<td class="no">
+						<span class = "queueno">
+							{{jinja_first_call}}
+						</span>  
+						<br>
+						Counter  {{jinja_first_counter}}
+					</td>
+					
+					<td class="no">
+						<span class = "queueno">
+							{{jinja_second_call}}
+						</span>  
+						<br>
+						Counter  {{jinja_second_counter}}
+					</td>
+					
+					<td class="no">
+						<span class = "queueno">
+							{{jinja_third_call}}
+						</span>  
+						<br>
+						Counter  {{jinja_third_counter}}
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+
+			<table align = "center">
+				<tr>
+					<td class="wait">
+						{{jinja_waiting_list}}
+						<br>			
+					</td>
+				
+					<td class="miss">
+						{{jinja_missed_list}}
+						<br>
+					</td>
+				</tr>
+			</table>					
+		
+		</form>
+
+	
+</body>
+</html>

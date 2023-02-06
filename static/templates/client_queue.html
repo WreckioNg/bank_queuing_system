@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type = "text/css" href="{{url_for('static', filename='css/client_queue.css')}}">
+	</head>
+	<body>
+	<!-- LOGO and Title -->
+		<div class="title">  
+			<table style="width:100%;">
+				<tr>
+					<td style="width:33%">
+						<img src="{{url_for('static', filename='pics/client/img_bos.jpg')}}" width="260" height="100" alt="Bank Logo"/>
+					</td>
+					<td style="width:33%; text-align:center">
+						<span style="font-size:40px; font-weight:bold;"> BOS {{jinja_branch_name}} Branch</span>
+					</td>
+					<td style="width:33%;">
+					</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+	<!-- Form -->
+		<form method = "POST">
+			<table align = "center">
+				<tr>
+					<td class="retail_rds">
+						<input type = "radio" id = "ret_rds" name = "input_type" value = "A" style="display: none;" checked ="checked">
+						<label for= "ret_rds"></label>
+					</td>
+					
+					<td class="individual_rds">
+						<input type = "radio" id = "ind_rds" name = "input_type" value = "B" style="display: none;">
+						<label for= "ind_rds"></label>
+					</td>
+					
+					<td class="corporate_rds">
+						<input type = "radio" id = "cor_rds" name = "input_type" value = "C" style="display: none;">
+						<label for= "cor_rds"></label>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<div align="center">
+				<p id="input_email">
+					<img src="{{url_for('static', filename='pics/client/img_email.png')}}" width="450px" height="100px" vertical-align="middle" alt="email"/>
+					<input type = "email" style ="font-size:50px;" required>
+				</p>
+			</div>
+			
+			<div id="take_queue" align="center">
+				<label class="get_queue" for= "get_queue"></label>
+				<input type = "submit" id="get_queue" value="Get Queue No" style="display: none;">
+			</div>
+			
+		</form>
+	</body>
+</html>

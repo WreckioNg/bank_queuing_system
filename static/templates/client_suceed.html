@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>queue_successful</title>
+	<link rel="stylesheet" type = "text/css" href="{{url_for('static', filename='css/que_succ.css')}}">
+</head>
+
+<body>
+	<!-- LOGO and Title -->
+		<div class="title">  
+			<table style="width:100%;">
+				<tr>
+					<td style="width:33%">
+						<img src="{{url_for('static', filename='pics/client/img_bos.jpg')}}" width="260" height="100" alt="Bank Logo"/>
+					</td>
+					<td style="width:33%; text-align:center">
+						<span style="font-size:40px; font-weight:bold;"> BOS {{jinja_branch_name}} Branch</span>
+					</td>
+					<td style="width:33%;">
+					</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+	<!-- Form -->
+		<form method = "POST">
+			<table class = "queue" align = "center">
+				<tr>
+					<td height="300">&nbsp;
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="biz_type">
+						<span style="font-weight:bold;font-size:45pt;">{{jinja_biz_type}}</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="que_text">
+						Your Queue No. is
+					</td>					
+				</tr>
+					
+				<tr>
+					<td class="que_no" style="font-size:150px; vertical-align: top">
+						{{jinja_get_queue_no}}
+					</td>
+				</tr>	
+			</table>
+			
+			
+		</form>
+</body>
+</html>

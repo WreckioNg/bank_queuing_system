@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CRO_reinitiate</title>
+	<link rel="stylesheet" type = "text/css" href="{{url_for('static', filename='css/cro_reinitiate.css')}}">
+</head>
+
+<body>
+
+	<!-- LOGO and Title -->
+		<div class="title">  
+			<table style="width:100%;">
+				<tr>
+					<td style="width:33%">
+						<img src="{{url_for('static', filename='pics/cro/img_bos.jpg')}}" width="260" height="100" alt="Bank Logo"/>
+					</td>
+					<td style="width:33%; text-align:center">
+						<span style="font-size:40px; font-weight:bold;"> BOS {{jinja_branch_name}} Branch</span>
+					</td>
+					<td style="width:33%;">
+					</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+	<!-- Form -->
+		<form method = "POST">
+			<table align = "center">
+				<tr>
+					<td class="retail_rds">
+						<input type = "radio" id = "ret_rds" name = "input_type" value = "A" style="display: none;" checked ="checked">
+						<label for= "ret_rds"></label>
+					</td>
+					
+					<td class="individual_rds">
+						<input type = "radio" id = "ind_rds" name = "input_type" value = "B" style="display: none;">
+						<label for= "ind_rds"></label>
+					</td>
+					
+					<td class="corporate_rds">
+						<input type = "radio" id = "cor_rds" name = "input_type" value = "C" style="display: none;">
+						<label for= "cor_rds"></label>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			
+			<table id= "cro_result" align = "center">
+				<tr>
+					<td id="view_sub">
+						<input type = "submit" id="view_submit" value="View" style="display: none;" name="action">
+						<label class="view_submit" for="view_submit" name="action"></label>
+					</td>
+					<td class = "bg_set" rowspan ="4" width = "800">
+						The queue for {{jinja_biz_type}} is reinitiated.
+						<br>
+					</td>
+				</tr>
+				<tr>	
+					<td id="stop_sub">
+						<input type = "submit" id="stop_submit" value="Stop" style="display: none;" name="action">
+						<label class="stop_submit" for= "stop_submit" name="action"></label>
+					</td>
+				</tr>
+				<tr>
+					<td id="reinitiate_sub">
+						<input type = "submit" id="reinitiate_submit" value="Reinitiate" style="display: none;" name="action">
+						<label class="reinitiate_submit" for= "reinitiate_submit" name="action"></label>
+					</td>
+				</tr>
+				<tr>
+					<td id="reset_sub">
+						<input type = "submit" id="reset_submit" value="Reset" style="display: none;" name="action">
+						<label class="reset_submit" for= "reset_submit" name="action"></label>
+					</td>
+				</tr>				
+			</table>						
+		
+		</form>
+
+	
+	
+	
+	
+</body>
+</html>
