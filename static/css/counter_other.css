@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+	font-family: Georgia,serif;
+}
+
+
+.individual_rds label{
+	background: url("../pics/counter/img_priv.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.individual_rds input:checked+label{
+	 background: url("../pics/counter/img_priv_selected.png") no-repeat;
+}
+
+.corporate_rds label{
+	background: url("../pics/counter/img_corp.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.corporate_rds input:checked+label{
+	background: url("../pics/counter/img_corp_selected.png") no-repeat;
+}
+
+.retail_rds label{
+	background: url("../pics/counter/img_retail.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.retail_rds input[type=radio]:checked+label{
+	background: url("../pics/counter/img_retail_selected.png") no-repeat;
+}
+
+
+.plate {
+	background-color:#EE2938; 
+	font-size: 22pt;
+	color: white;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+#reschedule_sub label{
+	background: url("../pics/counter/img_reschedule.png") no-repeat; 
+	width: 360px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+#call_sub label{
+	background: url("../pics/counter/img_call.png") no-repeat; 
+	width: 360px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+#onhold_sub label{
+	background: url("../pics/counter/img_onhold.png") no-repeat; 
+	width: 360px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.bg_set{
+	background: url("../pics/counter/img_bg.png"); 
+	text-align: center;
+	font-size: 30pt;
+}
+
+
+
+tr {
+	vertical-align: middle;
+}
+
+td {
+	vertical-align: middle;
+}
+
+img {
+	vertical-align: middle;
+}
+
+p input{
+	width:500px; height:60px; 
+	vertical-align: middle;
+}
+
+

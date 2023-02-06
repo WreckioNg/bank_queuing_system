@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	font-family: Georgia,serif;
+}
+
+img {
+	vertical-align: middle;
+}
+
+td {
+	height: 120px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.queue {
+	background: url(".././pics/client/img_bg.png") no-repeat; 
+	width: 678px; height: 616px; 
+}
+.que_no {
+	font-size: 100pt;
+	color:red;
+	font-weight: bold;
+}
+
+.biz_type {
+	font-weight: bold;
+}
+
+
+.que_text{
+	font-size: 25pt;
+	
+}
+
+
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.individual_rds label{
+	background: url(".././pics/client/img_individual.png") no-repeat; 
+	width: 480px; height: 430px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.individual_rds input:checked+label{
+	 background: url(".././pics/client/img_individual_selected.png") no-repeat;
+}
+
+.corporate_rds label{
+	background: url(".././pics/client/img_corporate.png") no-repeat; 
+	width: 480px; height: 430px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.corporate_rds input:checked+label{
+	background: url(".././pics/client/img_corporate_selected.png") no-repeat;
+}
+
+.retail_rds label{
+	background: url(".././pics/client/img_retail.png") no-repeat; 
+	width: 480px; height: 430px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.retail_rds input[type=radio]:checked+label{
+	background: url(".././pics/client/img_retail_selected.png") no-repeat;
+}
+
+
+#take_queue label{
+	background: url(".././pics/client/img_get_queue.png") no-repeat; 
+	width: 480px; height: 430px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+p input{
+	width:500px; height:60px; 
+	vertical-align: middle;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+

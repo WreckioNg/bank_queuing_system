@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	font-family: Georgia,serif;
+}
+
+.individual_rds label{
+	background: url("../pics/cro/img_priv.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.individual_rds input:checked+label{
+	 background: url("../pics/cro/img_priv_selected.png") no-repeat;
+}
+
+.corporate_rds label{
+	background: url("../pics/cro/img_corp.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.corporate_rds input:checked+label{
+	background: url("../pics/cro/img_corp_selected.png") no-repeat;
+}
+
+.retail_rds label{
+	background: url("../pics/cro/img_retail.png") no-repeat; 
+	width: 440px; height: 130px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.retail_rds input[type=radio]:checked+label{
+	background: url("../pics/cro/img_retail_selected.png") no-repeat;
+}
+
+
+#view_sub label{
+	background: url("../pics/cro/img_view.png") no-repeat; 
+	width: 360px; height: 120px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+#stop_sub label{
+	background: url("../pics/cro/img_stop.png") no-repeat; 
+	width: 360px; height: 120px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+#reinitiate_sub label{
+	background: url("../pics/cro/img_reinitiate.png") no-repeat; 
+	width: 360px; height: 120px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+#reset_sub label{
+	background: url("../pics/cro/img_reset.png") no-repeat; 
+	width: 360px; height: 120px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+
+.bg_set {
+	background: url("../pics/cro/img_bg.png"); 
+	text-align: center;
+	font-size: 30pt;
+}
+
+
+/*
+#cro_result {
+	background: url("../pics/cro/img_bg.png") repeat; 
+	width: 1400px; height: 520px; 
+	display: block; 
+	padding-left: 35px;
+	padding-top: 5px;
+}
+*/
+
+
+img {
+	vertical-align: middle;
+}
+
+
+
+
